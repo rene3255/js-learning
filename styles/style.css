@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: #3E3232;
+    --secundary-color: #503C3C;
+    --third-color: #7E6363;
+    --color-hover: #A87C7C;
+    
+    --font-monserrat: "Montserrat", sans-serif;
+    --font-krona: "Krona One", sans-serif;
+    --color-footer: #FFF6E9;
+}
+
+* {
+ padding: 0;
+ margin: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--color-footer);
+    box-sizing: border-box;
+}
+
+.header {
+
+    padding: 2% 0 0 20%;
+}
+
+.header__menu {
+    display: flex;
+    gap: 80px;
+
+}
+
+.header__menu__link {
+    font-family: var(--font-monserrat);
+    font-weight: 600;
+    color: var(--color-hover);
+}
+
+.highlight-meat {
+    color: var(--color-hover);
+}
+span {
+    color: var(--third-color);
+}
+.presentation {
+    display: flex;
+    padding: 8% 20%;
+    align-items: center;
+    justify-content: space-between;
+}
+.presentation__content {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.presentation__content__titulo {
+    font-size: 36px;
+    font-family: var(--font-krona);
+}
+
+.presentation__content__text {
+    font-size: 24px;
+    font-family: var(--font-monserrat);
+}
+
+.presentation__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.presentation__links__subtitle {
+    font-family: var(--font-krona);
+    font-size: 24px;
+    font-weight: 400;
+}
+.presentacion__links__link {
+    width: 378px;
+    border: 2px solid var(--third-color);
+    text-align: center;
+    padding: 7.5px 0;
+    border-radius: 8px;
+    font-family: var(--font-monserrat);
+    font-weight: 800;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--second-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.presentacion__links__link:hover {
+    background-color: var(--color-hover);
+    
+}
+
+.presentation__hover-image {
+    transition: transform 0.3s, ease;
+    
+}
+
+.presentation__hover-image:hover {
+  transform: scale(1.1) scaleX(-1);
+}
+
+.presentation___content___paragraph__link {
+    color: var(--color-hover);
+}
+.footer {
+    background-color: var(--third-color);
+    padding: 24px;
+    color: var(--primary-color);
+    text-align: center;
+    font-family: var(--font-monserrat);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+
