@@ -5,15 +5,16 @@
     --secundary-color: #503C3C;
     --third-color: #7E6363;
     --color-hover: #A87C7C;
-    
+
     --font-monserrat: "Montserrat", sans-serif;
     --font-krona: "Krona One", sans-serif;
     --color-footer: #FFF6E9;
+    --font-size-paragraph: 1.5rem;
 }
 
 * {
- padding: 0;
- margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -42,17 +43,21 @@ body {
 .highlight-meat {
     color: var(--color-hover);
 }
+
 span {
     color: var(--third-color);
 }
+
 .presentation {
     display: flex;
     padding: 8% 20%;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
+
 .presentation__content {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -65,7 +70,7 @@ span {
 }
 
 .presentation__content__text {
-    font-size: 24px;
+    font-size: var(--font-size-paragraph);
     font-family: var(--font-monserrat);
 }
 
@@ -78,11 +83,12 @@ span {
 
 .presentation__links__subtitle {
     font-family: var(--font-krona);
-    font-size: 24px;
+    font-size: var(--font-size-paragraph);
     font-weight: 400;
 }
+
 .presentacion__links__link {
-    width: 378px;
+    width: 50%;
     border: 2px solid var(--third-color);
     text-align: center;
     padding: 7.5px 0;
@@ -97,23 +103,29 @@ span {
     justify-content: center;
     gap: 10px;
 }
+
 .presentacion__links__link:hover {
     background-color: var(--color-hover);
-    
+
 }
 
 .presentation__hover-image {
     transition: transform 0.3s, ease;
-    
+
 }
 
 .presentation__hover-image:hover {
-  transform: scale(1.1) scaleX(-1);
+    transform: scale(1.1) scaleX(-1);
 }
 
 .presentation___content___paragraph__link {
     color: var(--color-hover);
 }
+
+.presentation__image {
+    width: 50%;
+}
+
 .footer {
     background-color: var(--third-color);
     padding: 24px;
@@ -121,7 +133,24 @@ span {
     text-align: center;
     font-family: var(--font-monserrat);
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--font-size-paragraph);
 }
 
+@media (max-width: 1200px) {
+    .presentation {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
 
+    .presentation__content {
+        width: auto;
+    }
+
+    .header {
+        padding: 10%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+}
